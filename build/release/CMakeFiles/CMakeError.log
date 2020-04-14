@@ -1,0 +1,107 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5ec55/fast"
+make[1]: se entra en el directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_5ec55.dir/build.make CMakeFiles/cmTC_5ec55.dir/build
+make[2]: se entra en el directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ec55.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes    -o CMakeFiles/cmTC_5ec55.dir/CheckSymbolExists.c.o   -c /home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5ec55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ec55.dir/link.txt --verbose=1
+/usr/bin/cc   -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes     CMakeFiles/cmTC_5ec55.dir/CheckSymbolExists.c.o  -o cmTC_5ec55 -rdynamic 
+CMakeFiles/cmTC_5ec55.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0xa): referencia a `pthread_create' sin definir
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5ec55.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_5ec55'
+make[2]: *** [cmTC_5ec55] Error 1
+make[2]: se sale del directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_5ec55/fast'
+make[1]: *** [cmTC_5ec55/fast] Error 2
+make[1]: se sale del directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+
+File /home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a5ccd/fast"
+make[1]: se entra en el directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a5ccd.dir/build.make CMakeFiles/cmTC_a5ccd.dir/build
+make[2]: se entra en el directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a5ccd.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a5ccd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:1: error: function declaration isn’t a prototype [-Werror=strict-prototypes]
+ char CHECK_FUNCTION_EXISTS();
+ ^
+cc1: all warnings being treated as errors
+CMakeFiles/cmTC_a5ccd.dir/build.make:65: fallo en las instrucciones para el objetivo 'CMakeFiles/cmTC_a5ccd.dir/CheckFunctionExists.c.o'
+make[2]: *** [CMakeFiles/cmTC_a5ccd.dir/CheckFunctionExists.c.o] Error 1
+make[2]: se sale del directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_a5ccd/fast'
+make[1]: *** [cmTC_a5ccd/fast] Error 2
+make[1]: se sale del directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: /home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68b0a/fast"
+make[1]: se entra en el directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_68b0a.dir/build.make CMakeFiles/cmTC_68b0a.dir/build
+make[2]: se entra en el directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68b0a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -std=c11  -Wall -Wextra -Wpointer-arith -Wundef -Wvla -Wwrite-strings -Werror -Wno-error=extra -Wno-error=unused-function -Wno-error=deprecated-declarations -Wno-error=sign-compare -Wno-error=strict-aliasing -Wno-error=type-limits -Wno-unused-parameter -Wno-error=unused-variable -Wno-error=undef -Wno-error=uninitialized -Wno-error=unused-result -Wlogical-op -Wno-error=maybe-uninitialized -Wno-error=clobbered -Wno-error=unused-but-set-variable -Wno-error=odr -Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes -march=native -maes -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_68b0a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:1: error: function declaration isn’t a prototype [-Werror=strict-prototypes]
+ char CHECK_FUNCTION_EXISTS();
+ ^
+cc1: all warnings being treated as errors
+CMakeFiles/cmTC_68b0a.dir/build.make:65: fallo en las instrucciones para el objetivo 'CMakeFiles/cmTC_68b0a.dir/CheckFunctionExists.c.o'
+make[2]: *** [CMakeFiles/cmTC_68b0a.dir/CheckFunctionExists.c.o] Error 1
+make[2]: se sale del directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_68b0a/fast'
+make[1]: *** [cmTC_68b0a/fast] Error 2
+make[1]: se sale del directorio '/home/glitch-dev/Escritorio/gyrocoin/build/release/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/nkont/Desktop/gyrocoin/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_ec052.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine versión 16.3.1+1def00d3d para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.23.28106.4 para x64
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ec052.dir\Debug\\" /Fd"cmTC_ec052.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue C:\Users\nkont\Desktop\gyrocoin\build\release\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+C:\Users\nkont\Desktop\gyrocoin\build\release\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\Users\nkont\Desktop\gyrocoin\build\release\CMakeFiles\CMakeTmp\cmTC_ec052.vcxproj]
+
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/nkont/Desktop/gyrocoin/build/release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2db1e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine versión 16.3.1+1def00d3d para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.23.28106.4 para x64
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2db1e.dir\Debug\\" /Fd"cmTC_2db1e.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue C:\Users\nkont\Desktop\gyrocoin\build\release\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+  CheckIncludeFile.c
+C:\Users\nkont\Desktop\gyrocoin\build\release\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1,10): fatal error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\Users\nkont\Desktop\gyrocoin\build\release\CMakeFiles\CMakeTmp\cmTC_2db1e.vcxproj]
+
+
+

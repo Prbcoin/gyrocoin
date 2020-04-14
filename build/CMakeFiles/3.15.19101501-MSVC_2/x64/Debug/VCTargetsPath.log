@@ -1,0 +1,11 @@
+﻿Build started 13/4/2020 6:19:38 p. m..
+     1>Project "C:\Users\nkont\Desktop\mycrypto\gyrocoin\build\CMakeFiles\3.15.19101501-MSVC_2\VCTargetsPath.vcxproj" on node 2 (Build target(s)).
+     1>PostBuildEvent:
+         echo VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\
+         :VCEnd
+         VCTargetsPath=C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\
+     1>Done Building Project "C:\Users\nkont\Desktop\mycrypto\gyrocoin\build\CMakeFiles\3.15.19101501-MSVC_2\VCTargetsPath.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.01
